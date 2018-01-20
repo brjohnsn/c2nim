@@ -6,7 +6,7 @@ skipDirs      = @["doc"]
 
 bin = @["c2nim"]
 
-requires "nim >= 0.16.0", "compiler >= 0.16.0"
+requires "nim >= 0.17.0 & <= 0.17.2", "compiler >= 0.17.0 & <= 0.17.2"
 
 task tests, "runs c2nim tests":
   exec "nim c c2nim.nim"
